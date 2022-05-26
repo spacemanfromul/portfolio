@@ -1,4 +1,4 @@
-var isMobile = {
+const isMobile = {
   Android: function() {
     return navigator.userAgent.match(/Android/i);
   },
@@ -20,15 +20,28 @@ var isMobile = {
       isMobile.BlackBerry() ||
       isMobile.iOS() ||
       isMobile.Opera() ||
-      isMobile.Windows()
-    );
+      isMobile.Windows());
+    
   }
 };
+
 if (isMobile.any()) {
-  document.body.classlist.add('_touch');
+  document.body.classList.add('_touch');
+
+  
+  let menuArrows = document.querySelectorAll('.menu_arrow');
+  if (menuArrows.length > 0) {
+    for (let index = 0; index < menuArrows.length; index++){
+      const menuArrow = menuArrow[index];
+      menuArrow.addEventListener("click", function(e){
+        menuArrow.parentElement.classList.toggle('_active');
+      });
+    }
+    
+  }
 }
 else
 {
-  document.body.classlist.add('_pc');
+  document.body.classList.add('_pc');
 }
   
