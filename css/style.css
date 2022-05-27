@@ -133,6 +133,10 @@ body{
         background-color: black;
         padding: 15px;
         min-width: 200px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.3s ease 0;
         
     }
     .menu_sub-list li{
@@ -210,14 +214,7 @@ body._touch .menu_list > li._active .menu_sub-list {
     .menu_list > li {
         padding: 10px 0;
     }
-    .menu_sub-list{
-        transform: translate(0px, 10%);
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        transition: all 0.3s ease 0;
-    }
-}
+ 
 
 
 
