@@ -439,4 +439,10 @@ body._touch .menu_list > li._active .menu_arrow {
         align-items: center;
         padding: 0px 0px 0px 0px;
     } 
+       .hello_title {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 60/44*100%;
+}
 }  
