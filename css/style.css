@@ -10,7 +10,7 @@ a {
 ul,
 ol,
 li{
-    list-style:none;
+   list-style:none;
 }
 img {
     vertical-align: top;
@@ -31,7 +31,7 @@ body{
     line-height: 1;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    background-color: #333;
+    background-color: rgb(81, 81, 81);
     color: #fff;
     }
 
@@ -93,11 +93,13 @@ body._lock{
 }
 /* + */
 .header {
+    
+
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(255, 123, 0);
+    background-color: #333;
     z-index: 10;
 }
 /* + */
@@ -113,7 +115,7 @@ body._lock{
 /* + */
 .header_logo {
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #333;
   /*  flex: 0 0 60px;    */
   /*  overflow: hidden; */
     position: relative;
@@ -230,10 +232,11 @@ body._touch .menu_list > li._active .menu_arrow {
     font-size: 20px;
     text-align: center;
     height:  47px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 29 / 20 * 100%;
     justify-content: center;
     color: #000;
+    height: 100%;
     transition: background-color 0.3s ease 0s;
   /*  @media (min-width: 992px){
         &:hover {
@@ -283,7 +286,16 @@ body._touch .menu_list > li._active .menu_arrow {
     max-width: 100%;
 }
 
+.apps_icon {
+    width: 180px;
+    height: 180px;
+    border-radius: 20%;
+    overflow: hidden;
+}
 
+.apps_icon img{
+    max-width: 100%;
+}
 
 
 /* Desktop */
@@ -396,7 +408,7 @@ body._touch .menu_list > li._active .menu_arrow {
         top: 0;
         left: 0;
         height: 70px;
-        background-color: blueviolet;
+        background-color: #333;
         z-index: 2;
     }
     /* + */
