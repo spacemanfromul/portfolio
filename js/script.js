@@ -32,7 +32,7 @@ if (isMobile.any()) {
   let menuArrows = document.querySelectorAll('.menu_arrow');
   if (menuArrows.length > 0) {
     for (let index = 0; index < menuArrows.length; index++){
-      const menuArrow = menuArrow[index];
+      const menuArrow = menuArrows[index];
       menuArrow.addEventListener("click", function (e){
         menuArrow.parentElement.classList.toggle('_active');
       });
