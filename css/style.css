@@ -287,6 +287,10 @@ body._touch .menu_list > li._active .menu_arrow {
     max-width: 100%;
 }
 
+.hello_text {
+    margin: 10px;
+}
+
 .apps_icon {
     width: 180px;
     height: 180px;
