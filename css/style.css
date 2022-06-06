@@ -228,7 +228,8 @@ body._touch .menu_list > li._active .menu_arrow {
     background-color: rgb(223, 239, 146);
     border-radius: 6px;
     display: inline-flex;
-    padding: 10px 20px 4px 0px;
+    padding: 10px 20px:
+    margin: 0px 0px 0px 5px;
     font-size: 20px;
     text-align: center;
     height:  40px;
