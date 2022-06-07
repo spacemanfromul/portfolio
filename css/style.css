@@ -228,8 +228,8 @@ body._touch .menu_list > li._active .menu_arrow {
     background-color: rgb(223, 239, 146);
     border-radius: 6px;
     display: inline-flex;
-    padding: 10px 20px:
-    margin: 0px 0px 0px 5px;
+    padding: 10px 20px;
+    margin: 0px 0px 2px 0px;
     font-size: 20px;
     text-align: center;
     height:  40px;
@@ -247,6 +247,11 @@ body._touch .menu_list > li._active .menu_arrow {
         width: 100%;
     }*/
 }
+
+.btn:hover {
+    background-color: #adb375;
+}
+
 .hello{
     padding: 30px;
     max-width: 1200px;
@@ -267,8 +272,9 @@ body._touch .menu_list > li._active .menu_arrow {
 }
 
 .hello_title {
-    font-size: 44px;
+    font-size: 42px;
     font-weight: 700;
+    margin: 0px 0px 10px 0px;
     color: #fff;
     line-height: 60/44*100%;
 }
@@ -329,11 +335,14 @@ body._touch .menu_list > li._active .menu_arrow {
         pointer-events: none;
         transition: all 0.3s ease 0;
     }
+    .general_items {
+        display: flex;
+    }
 }
 
 /* Mobile */
 
-   @media  (max-width:767px){
+@media  (max-width:767px){
        /* Иконка бургера */
     /* + */
     .menu_icon {
@@ -456,10 +465,63 @@ body._touch .menu_list > li._active .menu_arrow {
         align-items: center;
         padding: 0px 0px 0px 0px;
     } 
-       .hello_title {
-    font-size: 40px;
-    font-weight: 500;
-    color: #fff;
-    line-height: 60/44*100%;
-}
+    .hello_title {
+        font-size: 40px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 60/44*100%;
+    }
+    .hello_avatar {
+        display: flex;
+        flex: 0 0 193px;
+        width: 193px;
+        height: 193px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
 }  
+.general {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0px auto;
+    background-color: #1f1f1f68;
+}
+.general_container {
+    
+}
+.general_header {
+    display: flex;
+}
+.general_title {
+    font-size: 22px;
+    margin: 0px 0px 10px 0px;
+    font-weight: 500;
+  
+}
+.general_items {
+    margin: 0px -10px;
+}
+.general_column {
+    flex: 0 1 50%;
+    padding: 0px 10px;
+    margin: 0px 0px 20px 0px;;
+}
+.general_item {
+}
+.general_text {
+    line-height: 150%;
+}
+.text {
+}
+
+.general_item {
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px rgba(225, 225, 225, 0.22);
+    background-color: rgb(100, 100, 100);
+    margin: 4px;
+    padding: 20px;  
+}
+
+
+
