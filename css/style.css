@@ -191,7 +191,7 @@ body._lock{
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     padding: 15px;
     min-width: 200px;
         /*opacity: 0;
